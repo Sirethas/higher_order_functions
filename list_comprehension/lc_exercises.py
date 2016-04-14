@@ -69,8 +69,8 @@ def unique_consonants(phrase):
 
 # Uloha 13:
 def replace_vowels(phrase):
-    vowels = "aeiouy"
-    return "".join([c if c not in vowels else '0' for c in phrase])
+    vowels = {'a','e','i','o','u','y'}
+    return "".join([x if x.lower() not in vowels else '0' for x in phrase])
 
 
 # Uloha 14:
